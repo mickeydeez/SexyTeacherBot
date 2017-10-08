@@ -1,5 +1,7 @@
 # SexyTeacherBot
 
+The code must be run with python 3.6
+
 SexyTeacherBot is an interactive bot used in educational irc channels.
 The main purpose of this bot is to write an easy to use interface as well a providing some dynamic, helpful and fun functionality.
 
