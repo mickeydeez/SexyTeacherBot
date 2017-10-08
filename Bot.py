@@ -83,7 +83,8 @@ class Bot(object):
         self._send("MODE %s +B\r\n" % self.conf["nick"])
 
     def listen(self):
-        valid = re.compile(r"^:(\w+)!\S* (\w+) :?(#?\w+)(\s:\?(\w+))?(\s([^\s]+))?.*$")
+        valid = re.compile(r"^:(?P<nick>\w+)!\S* (?P<mode>\w+) :?(?P<chan>#?\w+)(\s:\?(?P<cmd>\w+))?(\s(?P<arg>[^\s]+))?.*$")
+
         try:
             recvd = self.s.recv(4096).decode()
             data = valid.match(recvd)
@@ -94,16 +95,17 @@ class Bot(object):
             elif not data:
                 return
 
-            nick = data.group(1)
-            mode = data.group(2)
-            chan = data.group(3)
-            cmd = data.group(5)
-            arg = data.group(7)
+            nick = data.group("nick")
+            mode = data.group("mode")
+            chan = data.group("chan")
+            cmd = data.group("cmd")
+            arg = data.group("arg")
 
             # Allow the bot to have private conversations
             if chan == self.conf["nick"]:
                 chan = nick
 
+            # Send welcome message to new users
             if mode == "JOIN" and self.sha2(nick) not in self.data["users"]:
                 cmd = "welcome"
 
@@ -116,9 +118,7 @@ class Bot(object):
                 return nick, chan, cmd, arg
         except socket.timeout:
             print("[-] Error: Socket timeout.")
-            # self.connect()
             self.listen()
         except Exception as e:
-            print(e)
             self.s.close()
-            exit(0)
+            raise e

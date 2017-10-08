@@ -17,14 +17,14 @@
     "irc": "",
     "nick": "",
     "chans": [
-
+      ""
     ],
     "pass": "",
-    "user": "JustATest",
-    "port": 6697
+    "user": "",
+    "port": 0
   },
   "users": [
-
+    ""
   ],
   "#learninghub": {
     "help": {
