@@ -97,9 +97,12 @@ class Bot(object):
 
             nick = data.group("nick")
             mode = data.group("mode")
-            chan = data.group("chan").lower()
-            cmd = data.group("cmd").lower()
+            chan = data.group("chan")
+            cmd = data.group("cmd")
             arg = data.group("arg")
+
+            if chan:
+                chan = chan.lower()
 
             # Allow the bot to have private conversations
             if chan == self.conf["nick"]:

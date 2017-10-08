@@ -13,16 +13,15 @@
     "google": "Google?! Don't dude, don't!"
   },
   "conf": {
-    "real": "JustATest",
-    "irc": "irc.anonops.com",
-    "nick": "JustATest",
+    "real": "",
+    "irc": "",
+    "nick": "",
     "chans": [
-      "#learninghub_test",
-      "#opsec_test"
+      ""
     ],
     "pass": "",
-    "user": "JustATest",
-    "port": 6697
+    "user": "",
+    "port": 0
   },
   "users": [
     ""

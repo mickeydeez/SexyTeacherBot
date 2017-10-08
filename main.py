@@ -118,7 +118,7 @@ def main():
     bot.join()
     threading.Thread(target=chat).start()
 
-    print("[+] Bot is up and working.\n")
+    print("[+] Bot is up and running.\n")
     print(conf["chans"][0] + "\n")
 
     while True:
