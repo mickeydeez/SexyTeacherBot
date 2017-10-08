@@ -18,7 +18,7 @@ class LearningHub(object):
     def __init__(self, data, bot):
         self.data = data
         self.bot = bot
-        self.name = "#learninghub_test"
+        self.name = "#learninghub"
 
     def welcome(self, nick):
         greet = (
@@ -61,7 +61,7 @@ class Opsec(object):
     def __init__(self, data, bot):
         self.data = data
         self.bot = bot
-        self.name = "#opsec_test"
+        self.name = "#opsec"
 
     def video(self, nick=None):
         videos = self.data[self.name]["videos"]

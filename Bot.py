@@ -97,8 +97,8 @@ class Bot(object):
 
             nick = data.group("nick")
             mode = data.group("mode")
-            chan = data.group("chan")
-            cmd = data.group("cmd")
+            chan = data.group("chan").lower()
+            cmd = data.group("cmd").lower()
             arg = data.group("arg")
 
             # Allow the bot to have private conversations
