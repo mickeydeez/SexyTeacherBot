@@ -1,15 +1,15 @@
 # SexyTeacherBot
 
-SexyTeacherBot is an interactive bot used in educational irc channel's, in this case: #learninghub.
+SexyTeacherBot is an interactive bot used in educational irc channels.
 The main purpose of this bot is to write an easy to use interface as well a providing some dynamic, helpful and fun functionality.
 
-The project consists of a global Bot object, which, with the help of sockets, provides basic irc bot functionality.
-All other files, both main.py and conf.json are specific for #learninghub
+Every channel the bot serves on needs to have a specific tag in the conf.json. That helps the bot coordinate it's commands and functionality. Adding special actions for a certain channel, that is, making it do something other than just provide a "quick response", will require an object under CustomChannels.py. 
 
-For security purposes, conf.json is incomplete. Lacking both 'users' and 'conf'.
+
+For security purposes, conf.json is incomplete. Lacking both 'users' - #learninghub and 'conf'.
 
 ```
-'users' should contain a list of SHA2 Hashes, which should be the registered nicks.
+'users' should contain a list of SHA2 Hashes of registered channel nicks (nicks that have been in the channel before).
 
 'conf' = {
     "irc": str(),       # IRC's address
