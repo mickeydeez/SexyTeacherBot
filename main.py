@@ -3,7 +3,8 @@ import time
 import json
 
 from Bot import Bot
-from CustomChannels import *
+from CustomChannels import check_nick
+import CustomChannels
 
 art = """
    _____              _______              _               ____        _
@@ -23,8 +24,6 @@ data = json.load(open(CONF_FILENAME, "r"))
 conf = data["conf"]
 
 bot = Bot(data)
-lhub = LearningHub(data, bot)
-opsec = Opsec(data, bot)
 
 
 def chat():
@@ -88,25 +87,17 @@ def listen_irc():
     if cmd == "help" or cmd == "h":
         response = bot_help(chan, arg)
     elif cmd in data["commands"]:
-        response = check_nick(data["commands"][cmd], arg)
+        response = data["commands"][cmd]
     elif chan in data:
         if cmd in data[chan]["commands"]:
-            response = check_nick(data[chan]["commands"][cmd], arg)
-        elif chan == "#learninghub":
-            if cmd == "welcome" or cmd == "w":
-                lhub.welcome(nick)
-                add_user(nick)
-                response = None
-            elif cmd in data[chan]["actions"]:
-                void = str(data[chan]["actions"][cmd])
-                response = exec_command(lhub, void, arg)
-        elif chan == "#opsec":
-            if cmd in data[chan]["actions"]:
-                void = str(data[chan]["actions"][cmd])
-                response = exec_command(opsec, void, arg)
+            response = data[chan]["commands"][cmd]
+        elif cmd in data[chan]["actions"]:
+            void = str(data[chan]["actions"][cmd])
+            obj = getattr(CustomChannels, chan.title())(data, bot)
+            response = exec_command(obj, void, arg)
 
     if response:
-        bot.message(response, chan)
+        bot.message(check_nick(response, arg), chan)
 
 
 def main():
@@ -124,6 +115,5 @@ def main():
     while True:
         listen_irc()
 
-
 if __name__ == "__main__":
-    main()
+    test()

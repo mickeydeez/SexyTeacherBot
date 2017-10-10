@@ -14,7 +14,7 @@ def write_data(data):
     w.close()
 
 
-class LearningHub(object):
+class Learninghub(object):
     def __init__(self, data, bot):
         self.data = data
         self.bot = bot

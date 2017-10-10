@@ -1,748 +1,751 @@
 {
+  "commands": {
+    "browse": "Don't ask question you can find out the answer to with a simple search.",
+    "read": "Think before you speak. Read before you think! Most problems can be solved by reading. Don't dare to ask until you have read the documentation of the program you are using.",
+    "ask": "Don't ask to ask, just ask!",
+    "version": "3.0 - Code is open-sourced on https://github.com/ghostahull/SexyTeacherBot.",
+    "google": "Google?! Don't dude, don't!",
+    "linux": "Linux?! Never heard of it. Oh, wait, you must mean GNU/Linux!"
+  },
+  "conf": {
+    "chans": [
+      "#learninghub_test"
+    ],
+    "nick": "JustATest",
+    "real": "JustATest",
+    "pass": "",
+    "irc": "irc.anonops.com",
+    "user": "JustATest",
+    "port": 6697
+  },
   "admins": [
     "Case",
     "S1rLancelot",
     "Woz"
   ],
-  "commands": {
-    "read": "Think before you speak. Read before you think! Most problems can be solved by reading. Don't dare to ask until you have read the documentation of the program you are using.",
-    "linux": "Linux?! Never heard of it. Oh, wait, you must mean GNU/Linux!",
-    "version": "3.0 - Code is open-sourced on https://github.com/ghostahull/SexyTeacherBot.",
-    "browse": "Don't ask question you can find out the answer to with a simple search.",
-    "ask": "Don't ask to ask, just ask!",
-    "google": "Google?! Don't dude, don't!"
-  },
-  "conf": {
-    "real": "",
-    "irc": "",
-    "nick": "",
-    "chans": [
-      ""
-    ],
-    "pass": "",
-    "user": "",
-    "port": 0
-  },
   "users": [
     ""
   ],
   "#learninghub": {
-    "help": {
-      "link": "This command will provide a link for a given course. Usage: ?link <course_number>. Courses go from 1-108.",
-      "goldmine": "This command will print the goldmine with the full list of courses. Most of them are extracted from pluralsight, others are provided by anons.",
-      "desc": "This command will provide a description on a given course. Usage: ?desc <course_number>. Courses go from 1-108.",
-      "randomcourse": "This command will print a random course from the goldmine, in case you want to do one and can't decide"
-    },
     "whatof": {
-      "v1": "Under development, if he ever says something that doesn't make any sense, excuse him, version 2 is on its way",
-      "Case": "Henry Dorsett Case is a low-level hustler in the underworld of Chiba City, Japan. Once a talented computer hacker, Case was caught stealing from his employer. As punishment, Case's nervous system was damaged with a mycotoxin, leaving him unable to access the global computer network in cyberspace. Unemployable, addicted to drugs, and suicidal, Case desperately searches the Chiba black clinics for a miracle cure.",
-      "anakin": "You were supposed to bring glory to the navy, not destroy it you faggot",
-      "luna": "When I admire the beauty of Luna, my soul expands in the worship of the creator.",
-      "multithr3d": "May your htop stats be low and your beards grow long.",
-      "sasuke": "He has wasted most of his life slacking, and he aint stopping now",
-      "Woz": "He does things no one in here is mentally capable of doing, especially not mickers",
-      "mickers": "Pussy lover on a mission to put his nose around as many as possible and share his thoughts on them.",
       "niggers": "They smell.",
+      "v1": "Under development, if he ever says something that doesn't make any sense, excuse him, version 2 is on its way",
+      "luna": "When I admire the beauty of Luna, my soul expands in the worship of the creator.",
+      "someone25572": "someone is sitting somewhere - sometime - meeting someone you definitely don't know",
+      "sasuke": "He has wasted most of his life slacking, and he aint stopping now",
+      "Case": "Henry Dorsett Case is a low-level hustler in the underworld of Chiba City, Japan. Once a talented computer hacker, Case was caught stealing from his employer. As punishment, Case's nervous system was damaged with a mycotoxin, leaving him unable to access the global computer network in cyberspace. Unemployable, addicted to drugs, and suicidal, Case desperately searches the Chiba black clinics for a miracle cure.",
       "ClaudiaD": "Tearing apart people's souls since forever. She also rides a unicorn.",
       "S1rLancelot": "Sir Lancelot du lac is a cold black hat hacker that would do anything to help his king, Arthur",
-      "someone25572": "someone is sitting somewhere - sometime - meeting someone you definitely don't know"
+      "mickers": "Pussy lover on a mission to put his nose around as many as possible and share his thoughts on them.",
+      "Woz": "He does things no one in here is mentally capable of doing, especially not mickers",
+      "anakin": "You were supposed to bring glory to the navy, not destroy it you faggot",
+      "multithr3d": "May your htop stats be low and your beards grow long."
+    },
+    "commands": {
+      "goldmine": "Get your computer sk1llz improved with these amazing courses! -> download -> www.ghostbin.com/paste/wsyuc or www.github.com/caseanon/Dump || WATCH ONLINE http://handbookproject.github.io",
+      "donate": "Case needs money for drugs. Also money to maintain and improve this channel. Ask him for a btc/eth address. You are welcome."
     },
     "courses": [
       {
-        "title": "Introduction to Pentesting and Ethical Hacking with Kali Linux",
+        "id": "0",
         "link": "http://www.mediafire.com/download/492h7o887yxexha/PT+and+EH+with+Kali+Linux.rar",
         "desc": "This course introduces ethical hackers and penetration testers to Kali Linux. It will show IT professionals how to use the ethical hacking techniques and how to conduct a professional penetration test workflow using the Skid Army Knife operating system Kali Linux.",
-        "id": "0"
+        "title": "Introduction to Pentesting and Ethical Hacking with Kali Linux"
       },
       {
-        "title": "Hack Yourself First; How to go on the Cyber-Offense",
+        "id": "1",
         "link": "http://www.mediafire.com/download/7dgfkktgyxlqx5u/Hack+Yourself+First%3B+How+to+go+on+the+Cyber-Offense.rar",
         "desc": "Hack Yourself First is all about developers building up cyber-offense skills and proactively seeking out security vulnerabilities in their own websites before an attacker does.",
-        "id": "1"
+        "title": "Hack Yourself First; How to go on the Cyber-Offense"
       },
       {
-        "title": "OWASP Top 10",
+        "id": "2",
         "link": "http://www.mediafire.com/download/zodyqcqoecka4yi/Web+Security+and+the+OWASP+Top+10%3B+The+Big+Picture.rar",
         "desc": "OWASP Top 10 The Big Picture is all about understanding the top 10 web security risks we face on the web today in an easily consumable, well-structured fashion that aligns to the number one industry standard on the topic today.",
-        "id": "2"
+        "title": "OWASP Top 10"
       },
       {
-        "title": "Reconnaissance/Footprinting",
+        "id": "3",
         "link": "http://www.mediafire.com/download/5tex1gndiis0rz3/Reconnaissance+-+Footprinting.rar",
         "desc": "This is the initial stage in gaining a blueprint of the security profile of a target, and it is accomplished in an organized manner. Reconnaissance is one of the three pre-attack phases, and results in a unique profile of an organization's networks and systems.",
-        "id": "3"
+        "title": "Reconnaissance/Footprinting"
       },
       {
-        "title": "SQL Injection",
+        "id": "4",
         "link": "http://www.mediafire.com/download/1bap7hf82clm9dy/SQL+Injection.rar",
         "desc": "This course takes you through everything from understanding the SQL syntax used by attackers, basic injection attacks, database discovery and data exfiltration, advanced concepts, and even using injection for network reconnaissance and running system commands.",
-        "id": "4"
+        "title": "SQL Injection"
       },
       {
-        "title": "Scanning Networks",
+        "id": "5",
         "link": "http://www.mediafire.com/download/22t74lyof149u41/Scanning+networks.rar",
         "desc": "It's time to learn how to dig around what you've found for important, relevant data in preparation for your attacks",
-        "id": "5"
+        "title": "Scanning Networks"
       },
       {
-        "title": "Enumeration",
+        "id": "6",
         "link": "http://www.mediafire.com/download/h285291nt7w8trh/Enumeration.rar",
         "desc": "Enumeration is the first official attack at your target. Enumeration is the process of gathering information that might include user names, computer names, network shares, services running, and other possible points of entry.",
-        "id": "6"
+        "title": "Enumeration"
       },
       {
-        "title": "Hacking Web Servers",
+        "id": "7",
         "link": "http://www.mediafire.com/download/g4di658xb9stz8g/Pentesting+Web+Servers.rar",
         "desc": "In this course, we'll look at various attack vectors in web servers. These include exploiting misconfigured servers, leveraging weaknesses in unpatched environments, compromising weak SSL implementations and much, much more.",
-        "id": "7"
+        "title": "Hacking Web Servers"
       },
       {
-        "title": "Hacking Web Applications",
+        "id": "8",
         "link": "http://www.mediafire.com/download/waqslt6jhk6ph1a/Pentesting+Web+Applications.rar",
         "desc": "In this course, we'll look a range of different security paradigms within web applications both conceptually and in practice. They'll be broken down into detail, exploited, and then discussed in the context of how the attacks could have been prevented.",
-        "id": "8"
+        "title": "Hacking Web Applications"
       },
       {
-        "title": "Cryptography",
+        "id": "9",
         "link": "http://www.mediafire.com/download/1cujirp51m911k8/Cryptography.rar",
         "desc": "In this course, you will learn to understand and apply fundamental concepts of cryptography, the learner will understand requirements for cryptography, understand and support secure protocols, and will gain an understanding of how to operate and implement cryptographic systems.",
-        "id": "9"
+        "title": "Cryptography"
       },
       {
-        "title": "Sniffing",
+        "id": "10",
         "link": "http://www.mediafire.com/download/fzbq3zzzqspzw15/Sniffing.rar",
         "desc": "You need to keep your network protected from attackers. This course will help you to understand how network sniffing works and how to keep your information secure.",
-        "id": "10"
+        "title": "Sniffing"
       },
       {
-        "title": "Session Hijacking",
+        "id": "11",
         "link": "http://www.mediafire.com/download/5irzrhub4r6mva3/Session+Hijacking.rar",
         "desc": "Session persistence is a fundamental concept in information systems. On the web, for example, which is dependent on the stateless HTTP protocol, session persistence is a key component of features ranging from shopping carts to the ability to logon.",
-        "id": "11"
+        "title": "Session Hijacking"
       },
       {
-        "title": "Social Engineering",
+        "id": "12",
         "link": "http://www.mediafire.com/download/2xqgt9g7044n683/Social+Engineering.rar",
         "desc": "In this course, we'll look at various different social engineering techniques that can be used to compromise systems. We'll also look at both computer-based and behavior-based tools to help defend against this risk.",
-        "id": "12"
+        "title": "Social Engineering"
       },
       {
-        "title": "System Hacking",
+        "id": "13",
         "link": "http://www.mediafire.com/download/zf2d20969azd887/System+hacking.rar",
         "desc": "After we've done our research, we've found our target, and identified its services, shares, users and resources, it's time to take total and complete control of this box.",
-        "id": "13"
+        "title": "System Hacking"
       },
       {
-        "title": "Denial of Service",
+        "id": "14",
         "link": "http://www.mediafire.com/download/x5zxdvv1h3k54nk/Denial+of+Service.rar",
         "desc": "In this course, you'll explore various ways DoS attacks are constructed and the weaknesses they exploit in order to be successful. You'll also delve into defensive patterns to help protect services from malicious attacks",
-        "id": "14"
+        "title": "Denial of Service"
       },
       {
-        "title": "Hacking Wireless Networks",
+        "id": "15",
         "link": "http://www.mediafire.com/download/r9hrz8zotis74f1/Hacking+wireless+networks.rar",
         "desc": "In this course, you'll learn the hacking methods that can be used to gain access to your network and how to best lower that security risk.",
-        "id": "15"
+        "title": "Hacking Wireless Networks"
       },
       {
-        "title": "Malware Threats",
+        "id": "16",
         "link": "http://www.mediafire.com/download/8caooodccdnc608/Malware+threats.rar",
         "desc": "This course will take you deep into the dark alley of how malware is used and deployed. We'll also dive into how Trojans and backdoors work. We'll look at what their purpose is, the signs that you have one, and how attackers cleverly hide them.",
-        "id": "16"
+        "title": "Malware Threats"
       },
       {
-        "title": "Evading IDS, Firewalls, and Honeypots",
+        "id": "17",
         "link": "http://www.mediafire.com/download/33z5epburhu1xgy/Evading+IDS%2C+Firewalls%2C+and+Honeypots.rar",
         "desc": "This course looks at how security defenses such as intrusion detection systems, firewalls, and honeypots are intended to work and how attackers typically circumvent them.",
-        "id": "17"
+        "title": "Evading IDS, Firewalls, and Honeypots"
       },
       {
-        "title": "Hacking Mobile Platforms",
+        "id": "18",
         "link": "http://www.mediafire.com/download/l45v3ne52qr9llw/Mobile+platforms.rar",
         "desc": "Most folks have approached mobile devices with the attitude of if it works, syncs, and plays games, I'm good. Overlooking this side of technology will lead you into one day appearing on an online video with the words FAIL plastered across your face.",
-        "id": "18"
+        "title": "Hacking Mobile Platforms"
       },
       {
-        "title": "Introduction to Firewalls",
+        "id": "19",
         "link": "http://www.mediafire.com/download/2kczrn29gt6fdp3/Introduction+to+Firewalls.rar",
         "desc": "If you know the basics of networking but have been mystified by firewalls, this course is for you. This course will give you the detailed fundamentals of how a stateful firewall operates and how it functions in a network.",
-        "id": "19"
+        "title": "Introduction to Firewalls"
       },
       {
-        "title": "Introduction to browser security headers",
+        "id": "20",
         "link": "http://www.mediafire.com/download/t98r47bpo9hy5n1/Introduction+to+browser+security+headers.rar",
         "desc": "Browser security headers provide a means for websites to describe how they should behave when loaded into the client. By specifying expected and allowable behaviors, security headers can thwart a number of otherwise serious attacks against websites.",
-        "id": "20"
+        "title": "Introduction to browser security headers"
       },
       {
-        "title": "Introduction to Wireshark",
+        "id": "21",
         "link": "http://www.mediafire.com/download/ou45m7o4xqt1qdu/Introduction+to+Wireshark.rar",
         "desc": "In this course, we will walk through the basics of Wireshark. Because Wireshark only captures what it sees on the network, we will also describe common protocols, and examine their operation using Wireshark captures.",
-        "id": "21"
+        "title": "Introduction to Wireshark"
       },
       {
-        "title": "Troubleshooting with Wireshark",
+        "id": "22",
         "link": "http://www.mediafire.com/download/n5exc1bomahud9m/Troubleshooting+with+Wireshark+Fundamental+Protocol+Analysis.rar",
         "desc": "Improve your network behavior troubleshooting skills and knowledge of protocols with this course. Youll use Wireshark to observe protocol logic, examine ICMP messages, capture DHCP traffic, and learn about basic DNS operation and how TCP operates.",
-        "id": "22"
+        "title": "Troubleshooting with Wireshark"
       },
       {
-        "title": "All about buffer overflows",
+        "id": "23",
         "link": "http://www.mediafire.com/download/sbst1evvisywe62/Buffer+Overflow.rar",
         "desc": "This course breaks down the technical subjects of computer memory management, controlling code, and data inside of a running program, and exploiting poor quality software into terms that IT people with no software development experience can understand.",
-        "id": "23"
+        "title": "All about buffer overflows"
       },
       {
-        "title": "Network Pentesting using Python and Kali linux",
+        "id": "24",
         "link": "http://www.mediafire.com/download/7rq1ujn9424d3hb/Network+PT+Using+Python+and+K_4li+Linux.rar",
         "desc": "This course introduces how to move from novice scripting to professional penetration testing, by using the cross-platform programming language, Python.",
-        "id": "24"
+        "title": "Network Pentesting using Python and Kali linux"
       },
       {
-        "title": "Metasploit Basics",
+        "id": "25",
         "link": "http://www.mediafire.com/download/mnulcdbw817f9q0/Metasploit+Basics.rar",
         "desc": "Using Metasploit and some associated tools, you will be able to simulate attacks whether from inside or external to the network.",
-        "id": "25"
+        "title": "Metasploit Basics"
       },
       {
-        "title": "CloudFlare Security",
+        "id": "26",
         "link": "http://www.mediafire.com/download/qchaazzxrdsmwja/CloudFlare+Security.rar",
         "desc": "In this course, well look at CloudFlare's free service",
-        "id": "26"
+        "title": "CloudFlare Security"
       },
       {
-        "title": "Hack your API first",
+        "id": "27",
         "link": "http://www.mediafire.com/download/1qqm5pcj6pz37wn/Hack+your+API+First.rar",
         "desc": "Recent years have seen a massive explosion in the growth of rich client apps that talk over the web using APIs across HTTP, but unfortunately, all too often they contain serious security vulnerabilities that are actually very easy to locate.",
-        "id": "27"
+        "title": "Hack your API first"
       },
       {
-        "title": "SSCP: Risk Identification, Monitoring, and Analysis",
+        "id": "28",
         "link": "http://www.mediafire.com/download/roaeau041zx8byx/SSCP%3B+Risk+Identification%2C+Monitoring%2C+and+Analysis.rar",
         "desc": "In this course, you will learn to understand the risk management process, perform security assessment activities, operate and maintain monitoring systems, and analyze monitoring results.",
-        "id": "28"
+        "title": "SSCP: Risk Identification, Monitoring, and Analysis"
       },
       {
-        "title": "Check Point Certified Security Administrator; Install & Deploy",
+        "id": "29",
         "link": "http://www.mediafire.com/download/ysvx972ymd57gme/Check+Point+Certified+Security+Administrator%3B+Install+%26+Deploy.rar",
         "desc": "The Check Point Security Administration Course will prepare network engineers to deploy the network security solution trusted by 100% of all Fortune 100 companies worldwide",
-        "id": "29"
+        "title": "Check Point Certified Security Administrator; Install & Deploy"
       },
       {
-        "title": "Software Security",
+        "id": "30",
         "link": "http://www.mediafire.com/download/mvk782rt6k28yha/Software+Security.rar",
         "desc": "Course from coursera which talks about all sorts of software security risks, ranging from XSS to code injection, NOP sleds, etc",
-        "id": "30"
+        "title": "Software Security"
       },
       {
-        "title": "Hardware Security",
+        "id": "31",
         "link": "http://www.mediafire.com/download/vxd0998dmniuccz/Hardware+Security.rar",
         "desc": "Course from coursera, talks about the hardware attack vectors",
-        "id": "31"
+        "title": "Hardware Security"
       },
       {
-        "title": "Bitcoin & Cryptocurrency tech, by anominous - thanks!",
+        "id": "32",
         "link": "http://www.mediafire.com/download/mehi7uxazp5f6g6/Bitcoin+and+Cryptocurrency+Technologies+[Princeton+University].7z",
         "desc": "Bitcoin & Cryptocurrency tech",
-        "id": "32"
+        "title": "Bitcoin & Cryptocurrency tech, by anominous - thanks!"
       },
       {
-        "title": "C++ Fundamentals",
+        "id": "33",
         "link": "http://www.mediafire.com/download/su02297mbmlxq27/C%2B%2B+Fundamentals.rar",
         "desc": "In this course, I'll cover basics of language syntax; declaring variables, classes, building expressions using operators and functions; and work up to templates, pointers, const, and polymorphism.",
-        "id": "33"
+        "title": "C++ Fundamentals"
       },
       {
-        "title": "C++ Advanced topics",
+        "id": "34",
         "link": "http://www.mediafire.com/download/9tgfpx8pzwakrjc/C%2B%2B_Advanced_Topics.rar",
         "desc": "In this course you'll draw on your C++ Fundamentals knowledge to explore a number of ways to ensure your applications are implemented in Modern C++, not C-With-Classes or other old-style idioms. You'll take advantage of the Standard Library and write code that is future proof and safe.",
-        "id": "34"
+        "title": "C++ Advanced topics"
       },
       {
-        "title": "Javascript from Scratch",
+        "id": "35",
         "link": "http://www.mediafire.com/download/rr8kjao0zaxld3o/JavaScript+from+Scratch.rar",
         "desc": "In this course, you will learn all you need to know to get started programming with this powerful language that can be used for creating web applications or Windows 8 applications. This course assumes no prior programming experience.",
-        "id": "35"
+        "title": "Javascript from Scratch"
       },
       {
-        "title": "Introduction to Javascript, by anominous - thanks dude, you rock!",
+        "id": "36",
         "link": "http://www.mediafire.com/download/fd9r8hc6u6zouga/SitePoint-Introduction.to.JavaScript.7z",
         "desc": "In this course, you will learn all you need to know to get started programming with this powerful language that can be used for creating web applications or Windows 8 applications. This course assumes no prior programming experience.",
-        "id": "36"
+        "title": "Introduction to Javascript, by anominous - thanks dude, you rock!"
       },
       {
-        "title": "Introduction to HTML (for designers - you don't really need to be a designer)",
+        "id": "37",
         "link": "http://www.mediafire.com/download/w37r7339ouih7lg/Introduction+to+HTML+for+Designers.rar",
         "desc": "By the time this course is over you'll have the knowledge you need to start writing your own HTML from scratch",
-        "id": "37"
+        "title": "Introduction to HTML (for designers - you don't really need to be a designer)"
       },
       {
-        "title": "Introduction to JQuery (for designers - you don't really need to be a designer)",
+        "id": "38",
         "link": "http://www.mediafire.com/download/0j09qr98vtbdjab/Introduction+to+jQuery+for+Designers.rar",
         "desc": "This course will cover presentational uses of jQuery such as selecting elements, manipulating and traversing the DOM, basic and custom jQuery animation, event handling.",
-        "id": "38"
+        "title": "Introduction to JQuery (for designers - you don't really need to be a designer)"
       },
       {
-        "title": "Introduction to CSS (for designers - you don't really need to be a designer)",
+        "id": "39",
         "link": "http://www.mediafire.com/download/jj466s79n75ns46/Introduction+to+CSS+for+Designers.rar",
         "desc": "In this tutorial we'll learn how to use CSS to style a resort website from scratch.",
-        "id": "39"
+        "title": "Introduction to CSS (for designers - you don't really need to be a designer)"
       },
       {
-        "title": "Get started with AngularJS",
+        "id": "40",
         "link": "http://www.mediafire.com/download/sbrgwwksehmz8rc/Angular_Js_-_Get_Started.rar",
         "desc": "This course demonstrates how to use the essential abstractions of AngularJS, including modules, controllers, directives, and services.",
-        "id": "40"
+        "title": "Get started with AngularJS"
       },
       {
-        "title": "Building Angular and Node JS Apps with the MEAN Stack",
+        "id": "41",
         "link": "http://www.mediafire.com/download/e5ynwz4th5g3bvo/Building+Angular+and+Node.js+Apps+with+the+MEAN+Stack.rar",
         "desc": "Learn to build an end to end application with Angular, Node, Express and Mongo",
-        "id": "41"
+        "title": "Building Angular and Node JS Apps with the MEAN Stack"
       },
       {
-        "title": "ExtJS Desktop Fundamentals",
+        "id": "42",
         "link": "http://www.mediafire.com/download/ooulsej4ui421q6/ExtJS+Desktop+Fundamentals.rar",
         "desc": "In this course you will learn the basics of building an ExtJS web application.",
-        "id": "42"
+        "title": "ExtJS Desktop Fundamentals"
       },
       {
-        "title": "Python Fundamentals",
+        "id": "43",
         "link": "http://www.mediafire.com/download/gsc0epd3jvgayfb/Python+Fundamentals.rar",
         "desc": "Python Fundamentals gets you started with Python, a dynamic language popular for web development, big data, science, and scripting.",
-        "id": "43"
+        "title": "Python Fundamentals"
       },
       {
-        "title": "Python Beyond the basics",
+        "id": "44",
         "link": "http://www.mediafire.com/download/dbn6i84zfsb8566/Python_%E2%80%93_Beyond_the_Basics.rar",
         "desc": "Python - Beyond the Basics deepens and broadens your knowledge of Python, a dynamic language popular for web development, big data, science, and scripting.",
-        "id": "44"
+        "title": "Python Beyond the basics"
       },
       {
-        "title": "Ruby 2.0, by anominous - thanks dude!",
+        "id": "45",
         "link": "http://www.mediafire.com/download/p9oappfwmb5mdvb/SitePoint-Ruby2.7z",
         "desc": "Basics of Ruby 2.0",
-        "id": "45"
+        "title": "Ruby 2.0, by anominous - thanks dude!"
       },
       {
-        "title": "Getting started with BackBone.js, by anominous - thanks dude",
+        "id": "46",
         "link": "http://www.mediafire.com/download/9anvrv6dxaaacbn/SitePoint-Getting.Started.with.BackBone.js.7z",
         "desc": "Backbone.js is a set of tools that gives structure to client-side web applications. It helps us write clean, maintainable JavaScript applications.",
-        "id": "46"
+        "title": "Getting started with BackBone.js, by anominous - thanks dude"
       },
       {
-        "title": "Introduction to Network Security",
+        "id": "47",
         "link": "http://www.mediafire.com/download/yraijpmuzoa1zpn/Cisco+CCNA+Security%3B+Introduction+to+Network+Security.rar",
         "desc": "Part 1 of 3 in the Cisco CCNA Security (640-554) series will teach you how to identify, lockdown, and secure vulnerabilities in a small to medium enterprise branch network.",
-        "id": "47"
+        "title": "Introduction to Network Security"
       },
       {
-        "title": "AAA and IP Security",
+        "id": "48",
         "link": "http://www.mediafire.com/download/lmj3ri990ou3j64/Cisco_CCNA_Security%3B_AAA_and_IP_Security.rar",
         "desc": "Part 2 of 3 in the Cisco CCNA Security (640-554) series. This course will teach you how to identify, lockdown, and secure vulnerabilities in a small to medium enterprise branch network.",
-        "id": "48"
+        "title": "AAA and IP Security"
       },
       {
-        "title": "Firewalls and VPNs",
+        "id": "49",
         "link": "http://www.mediafire.com/download/lhajdkufn9oi5ta/Cisco+CCNA+Security%3B+Firewalls+and+VPNs.rar",
         "desc": "Part 3 of 3 in the Cisco CCNA Security (640-554) series will teach you how to identify, lockdown, and secure vulnerabilities in a small to medium enterprise branch network.",
-        "id": "49"
+        "title": "Firewalls and VPNs"
       },
       {
-        "title": "CompTIA A+ Part 1: Computer Hardware",
+        "id": "50",
         "link": "http://www.mediafire.com/download/f5013b98tc40fj8/CompTIA+A%2B+Part+1%3B+Computer+Hardware.rar",
         "desc": "In this course, we perform a comprehensive survey of all interior and external personal computer (PC) hardware. The subject matter maps to every objective in the Hardware domain of the CompTIA A+ 220-901 certification exam.",
-        "id": "50"
+        "title": "CompTIA A+ Part 1: Computer Hardware"
       },
       {
-        "title": "CompTIA A+ Part 2: Networking",
+        "id": "51",
         "link": "http://www.mediafire.com/download/38q520p66a5a68q/CompTIA+A%2B+Part+2%3B+Networking.rar",
         "desc": "This course covers every Windows Operating Systems domain objective in the CompTIA A+ 220-902 exam blueprint.",
-        "id": "51"
+        "title": "CompTIA A+ Part 2: Networking"
       },
       {
-        "title": "CompTIA A+ Part 3: Peripherals and best practices",
+        "id": "52",
         "link": "http://www.mediafire.com/download/psmkodtkcy440rz/CompTIA+A%2B+Part+3%3B+Peripherals+and+best+practices.rar",
         "desc": "In this course, we perform a comprehensive survey of all interior and external personal computer (PC) hardware. The subject matter maps to every objective in the Hardware domain of the CompTIA A+ 220-901 certification exam.",
-        "id": "52"
+        "title": "CompTIA A+ Part 3: Peripherals and best practices"
       },
       {
-        "title": "CompTIA A+ Part 4: Operating System",
+        "id": "53",
         "link": "http://www.mediafire.com/download/mi3mvleyyd8ayu4/CompTIA+A%2B+Part+4%3B+Operating+Systems.rar",
         "desc": "This course covers every Windows Operating Systems domain objective in the CompTIA A+ 220-902 exam blueprint.",
-        "id": "53"
+        "title": "CompTIA A+ Part 4: Operating System"
       },
       {
-        "title": "CompTIA A+ Part 5: Mobile Devices and Troubleshooting",
+        "id": "54",
         "link": "http://www.mediafire.com/download/5scd91h4gkaefoa/CompTIA+A%2B+Part+5%3B+Mobile+Devices+and+Troubleshooting.rar",
         "desc": "This course covers every objective from the Mobile Devices domain of the CompTIA 220-901 certification exam.",
-        "id": "54"
+        "title": "CompTIA A+ Part 5: Mobile Devices and Troubleshooting"
       },
       {
-        "title": "CompTIA Security+ Domain 1 - Network Security.",
+        "id": "55",
         "link": "http://www.mediafire.com/download/wbdho927tnl1p26/CompTIA+Security%2B.rar",
         "desc": "This course fully prepares you for the Networking domain of the CompTIA A+ 220-901 certification exam.",
-        "id": "55"
+        "title": "CompTIA Security+ Domain 1 - Network Security."
       },
       {
-        "title": "Network Architecture",
+        "id": "56",
         "link": "http://www.mediafire.com/download/2j9vbybrqab3x5q/Network+Architecture+for+CompTIA+Network%2B.rar",
         "desc": "The student learns the basic building blocks of Ethernet networks and emerges with an excellent, well-rounded understanding of computer networking fundamentals.",
-        "id": "56"
+        "title": "Network Architecture"
       },
       {
-        "title": "Network Operations",
+        "id": "57",
         "link": "http://www.mediafire.com/download/y65xsb8n6rfdcp8/Network+Operations+for+CompTIA+Network%2B.rar",
         "desc": "Network operations is really the magic that makes IT systems work. This course will walk the viewer through many of the primary technologies used to make surfing the web possible.",
-        "id": "57"
+        "title": "Network Operations"
       },
       {
-        "title": "Network Security",
+        "id": "58",
         "link": "http://www.mediafire.com/download/d4qdr3jwh337033/Network+Security+for+CompTIA+Network%2B.rar",
         "desc": "CompTIA Security+ (2014 Objectives) prepares networking and IT professionals with the knowledge and skills required to identify risk, to participate in risk mitigation activities, and to provide infrastructure, application, information, and operational security.",
-        "id": "58"
+        "title": "Network Security"
       },
       {
-        "title": "Linux Installation and Initial Configuration",
+        "id": "59",
         "link": "http://www.mediafire.com/download/xxz33o4tq1obpzk/Linux+Installation+and+Initial+Configuration.rar",
         "desc": "Learning to work with and master multiple Linux distributions. This is the 1st of 4 courses that will prepare you for the LPIC-1 and CompTIA Linux+ certification.",
-        "id": "59"
+        "title": "Linux Installation and Initial Configuration"
       },
       {
-        "title": "Introduction to the Bash Shell",
+        "id": "60",
         "link": "http://www.mediafire.com/download/i24oogco4ch9ma4/Introduction+to+the+Bash+Shell.rar",
         "desc": "The command line is one of the most important tools for a Linux/UNIX power user. Bash is the default login shell on Linux and Mac OS, and adding it to your skillset will open up a whole new world of possibilities.",
-        "id": "60"
+        "title": "Introduction to the Bash Shell"
       },
       {
-        "title": "Shell Scripting with Bash",
+        "id": "61",
         "link": "http://www.mediafire.com/download/t5eha9cr4eckayb/Shell+Scripting+with+Bash.rar",
         "desc": "Bash shell scripts allow you to automate just about any task on a UNIX system. They combine the power of all the UNIX userland utilities with a powerful scripting language. Whether you are a system administrator, a developer or a power user, shell scripts will make you more productive.",
-        "id": "61"
+        "title": "Shell Scripting with Bash"
       },
       {
-        "title": "Linux Command Line Interface Fundamentals",
+        "id": "62",
         "link": "http://www.mediafire.com/download/27hfeldyqrs2ae8/Linux+Command+Line+Interface+%28CLI%29+Fundamentals.rar",
         "desc": "Mastering the command line is so important when it comes to managing the Linux Server. Very often there will be no GUI and all access is via SSH from PuTTY or another client. You will soon learn the speed at which tasks can be achieved from the CLI and why it is so powerful.",
-        "id": "62"
+        "title": "Linux Command Line Interface Fundamentals"
       },
       {
-        "title": "Adobe Premiere Pro CC Fundamentals",
+        "id": "63",
         "link": "http://www.mediafire.com/download/6pn0jr7nlb7rmc0/Adobe+Premiere+Pro+CC+Fundamentals.rar",
         "desc": "In this course, we'll review how to create new projects, import media, and build sequences in Adobe Premiere Pro CC.",
-        "id": "63"
+        "title": "Adobe Premiere Pro CC Fundamentals"
       },
       {
-        "title": "Animation and Video Editing in Photoshop CS6",
+        "id": "64",
         "link": "http://www.mediafire.com/download/ys44ptebw6tk4o8/Animation+and+Video+Editing+in+Photoshop+CS6.rar",
         "desc": "We'll begin this course by learning about some of the basic features of the video portion of the timeline panel where we'll learn how to import video clips and do some basic editing.",
-        "id": "64"
+        "title": "Animation and Video Editing in Photoshop CS6"
       },
       {
-        "title": "Color Correction and Grading in Adobe Premiere Pro and SpeedGrade",
+        "id": "65",
         "link": "http://www.mediafire.com/download/evuudd9t6dtc3ej/Color+Correction+and+Grading+in+Adobe+Premiere+Pro+and+SpeedGrade.rar",
         "desc": "Throughout this tutorial, we will learn all about the plethora of color correcting and grading tools found within Adobe's video editing application, Premiere Pro.",
-        "id": "65"
+        "title": "Color Correction and Grading in Adobe Premiere Pro and SpeedGrade"
       },
       {
-        "title": "Action Scene Editing Techniques in Adobe Premiere Pro",
+        "id": "66",
         "link": "http://www.mediafire.com/download/0gu7x007mpaclwd/Action+Scene+Editing+Techniques+in+Adobe+Premiere+Pro.rar",
         "desc": "Action Scene Editing Techniques in Adobe Premiere Pro -- http://www.mediafire.com/download/0gu7x007mpaclwd/Action+Scene+Editing+Techniques+in+Adobe+Premiere+Pro.rar",
-        "id": "66"
+        "title": "Action Scene Editing Techniques in Adobe Premiere Pro"
       },
       {
-        "title": "Adobe Premiere Pro CS6 Setup [This is the software, not a course]",
+        "id": "67",
         "link": "http://www.mediafire.com/download/u6dko8ug5ysbrw2/Adobe+Premiere+Pro+CS6.rar",
         "desc": "The software required for the video editing courses",
-        "id": "67"
+        "title": "Adobe Premiere Pro CS6 Setup [This is the software, not a course]"
       },
       {
-        "title": "Clean Code",
+        "id": "68",
         "link": "http://www.mediafire.com/download/6ny3ybv2ojzr6vt/Clean+Code.rar",
         "desc": "Anyone can write code a computer can understand, but professional developers write code *humans* can understand. Clean code is a reader-focused development style that produces software that's easy to write, read and maintain.",
-        "id": "68"
+        "title": "Clean Code"
       },
       {
-        "title": "Test Driven Development with Brad Wilson",
+        "id": "69",
         "link": "http://www.mediafire.com/download/cc6ibqxbhdcivea/TDD+with+Brad+Wilson.rar",
         "desc": "Brad Wilson creates a subscription billing system under the gun - using TDD.",
-        "id": "69"
+        "title": "Test Driven Development with Brad Wilson"
       },
       {
-        "title": "The fundamentals of Scrum methodology",
+        "id": "70",
         "link": "http://www.mediafire.com/download/cp8w28mcl1258o4/ScrumFundamentals.rar",
         "desc": "This course introduces the business case for Scrum, the core Scrum framework, and and the raw ingredients for bootstrapping Scrum in your organization.",
-        "id": "70"
+        "title": "The fundamentals of Scrum methodology"
       },
       {
-        "title": "Building a successful blog",
+        "id": "71",
         "link": "http://www.mediafire.com/download/0u690ecz1q8lj1k/1.+Building+a+successful+blog.rar",
         "desc": "In this introductory course on blogging we will go over a few of the basics of blogging and show the way to get started with blogging immediately.",
-        "id": "71"
+        "title": "Building a successful blog"
       },
       {
-        "title": "Building a high traffic profitable blog",
+        "id": "72",
         "link": "http://www.mediafire.com/download/653jtq5261zuapx/2.+Building+a+High+Traffic%2C+Profitable+Blog.rar",
         "desc": "In this course, we discuss the essential elements to bringing quality content to the masses, making it popular, and monetizing your effort.",
-        "id": "72"
+        "title": "Building a high traffic profitable blog"
       },
       {
-        "title": "Cloud security",
+        "id": "73",
         "link": "http://www.mediafire.com/download/ka9qu9136x8on4j/Cloud+security.rar",
         "desc": "In this course, you will be learning about the basics of cloud computing, security best practices for clouds, and other cloud security considerations that will ensure success for your business.",
-        "id": "73"
+        "title": "Cloud security"
       },
       {
-        "title": "Introduction to penetration testing using Metasploit",
+        "id": "74",
         "link": "http://www.mediafire.com/download/5ut59in0l6okeaq/Introduction+to+Penetration+Testing+Using+Metasploit.rar",
         "desc": "Metasploit is an essential tool in the penetration tester's arsenal. This course will teach you the foundations of using the Metasploit Framework to find and verify vulnerabilities in your systems.",
-        "id": "74"
+        "title": "Introduction to penetration testing using Metasploit"
       },
       {
-        "title": "C Fundamentals",
+        "id": "75",
         "link": "http://www.mediafire.com/download/com5mg5fda6mwd6/C+Fundamentals.rar",
         "desc": "The C Programming Language course is designed to give you everything you need to become a productive C programmer.",
-        "id": "75"
+        "title": "C Fundamentals"
       },
       {
-        "title": "C in Action",
+        "id": "76",
         "link": "http://www.mediafire.com/download/dzr3d2jymdhdqs6/C+in+Action.rar",
         "desc": "This course will provide you with a complete and practical tour of the C programming language and libraries.",
-        "id": "76"
+        "title": "C in Action"
       },
       {
-        "title": "Java Fundamentals",
+        "id": "77",
         "link": "http://www.mediafire.com/download/t5rygwbb45izg71/Java+Fundamentals.rar",
         "desc": "This course provides complete coverage of the Java programming language and serves as a strong foundation for all Java-based development environments including client-based, server-side, and Android.",
-        "id": "77"
+        "title": "Java Fundamentals"
       },
       {
-        "title": "Fiddler",
+        "id": "78",
         "link": "http://www.mediafire.com/download/xvgjnq2ispauz3v/Fiddler.rar",
         "desc": "Learn how to use the popular Fiddler freeware web tracing tool.",
-        "id": "78"
+        "title": "Fiddler"
       },
       {
-        "title": "Cloud Computing",
+        "id": "79",
         "link": "http://www.mediafire.com/download/6ctvkguxr9g4609/Cloud+computing.rar",
         "desc": "In this course, we'll look at the ways the cloud can enable us to build more secure software than ever, whilst also identifying where it can leave us more vulnerable. We'll also look at hardening the cloud",
-        "id": "79"
+        "title": "Cloud Computing"
       },
       {
-        "title": "Wireshark 2.0",
+        "id": "80",
         "link": "http://www.mediafire.com/download/n98viipaz131fhq/Wireshark+2.0.rar",
         "desc": "This is a fundamental course that provides you with the knowledge that you need to use Wireshark 2.0 to capture packets on any network interface, and to display, navigate, and analyze this packet capture",
-        "id": "80"
+        "title": "Wireshark 2.0"
       },
       {
-        "title": "Introduction to Pentesting",
+        "id": "81",
         "link": "http://www.mediafire.com/download/b71c8v6tbqxzure/Introduction+to+Pentesting.rar",
         "desc": "In this course, you will learn the ins and outs of planning and executing a penetration test against your own or your clients network. This course is a 10,000 foot view of penetration testing",
-        "id": "81"
+        "title": "Introduction to Pentesting"
       },
       {
-        "title": "Network Security Testing With NMAP",
+        "id": "82",
         "link": "http://www.mediafire.com/download/3guhkfrhfbvs01b/NMAP.rar",
         "desc": "This course presents NMAP, a network scanning tool, from basic usage through advanced service analysis.",
-        "id": "82"
+        "title": "Network Security Testing With NMAP"
       },
       {
-        "title": " Introduction to PowerShell",
+        "id": "83",
         "link": "http://www.mediafire.com/download/8b63ljih3cjl426/PowerShell_-_Getting_Started.rar",
         "desc": "This is an introductory course on PowerShell and how to use it for basic IT Operations support.",
-        "id": "83"
+        "title": " Introduction to PowerShell"
       },
       {
-        "title": " Introduction to Arduino",
+        "id": "84",
         "link": "http://www.mediafire.com/download/pvmstcc4abura43/Arduino.rar",
         "desc": "This course is an introduction to the Arduino hardware and software platform.",
-        "id": "84"
+        "title": " Introduction to Arduino"
       },
       {
-        "title": " Raspberry Pi Home Server",
+        "id": "85",
         "link": "http://www.mediafire.com/download/sl36dmuomdld4qa/RaspberryPi+HomeServer.rar",
         "desc": "Turn a Raspberry Pi computer into a fully-featured home server. Run your home for a penny a day.",
-        "id": "85"
+        "title": " Raspberry Pi Home Server"
       },
       {
-        "title": " Raspberry Pi for Developers",
+        "id": "86",
         "link": "http://www.mediafire.com/download/5u2g1svecr1iukm/Raspberry+for+Devs.rar",
         "desc": "This course is an introduction to the Raspberry Pi platform.",
-        "id": "86"
+        "title": " Raspberry Pi for Developers"
       },
       {
-        "title": " Django Fundamentals",
+        "id": "87",
         "link": "http://www.mediafire.com/file/ucv1l1j9y73i8cc/Django+Fundamentals.rar",
         "desc": "This course teaches the basics of web development with the Django framework. It will teach you everything you need to become a productive Python web developer.",
-        "id": "87"
+        "title": " Django Fundamentals"
       },
       {
-        "title": "",
+        "id": "88",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "88"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "89",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "89"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "90",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "90"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "91",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "91"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "92",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "92"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "93",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "93"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "94",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "94"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "95",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "95"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "96",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "96"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "97",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "97"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "98",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "98"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "99",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "99"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "100",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "100"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "101",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "101"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "102",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "102"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "103",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "103"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "104",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "104"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "105",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "105"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "106",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "106"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "107",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "107"
+        "title": ""
       },
       {
-        "title": "",
+        "id": "108",
         "link": "",
         "desc": "CHFI certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. The CHFI certification will fortify the application knowledge of law enforcement personnel, system administrators, security officers, defense and military personal, legal professionals, bankers, security professionals, and anyone who is concerned about the integrity of the network infrastructure.",
-        "id": "108"
+        "title": ""
       }
     ],
-    "commands": {
-      "donate": "Case needs money for drugs. Also money to maintain and improve this channel. Ask him for a btc/eth address. You are welcome.",
-      "goldmine": "Get your computer sk1llz improved with these amazing courses! -> download -> www.ghostbin.com/paste/wsyuc or www.github.com/caseanon/Dump || WATCH ONLINE http://handbookproject.github.io"
+    "help": {
+      "link": "This command will provide a link for a given course. Usage: ?link <course_number>. Courses go from 1-108.",
+      "desc": "This command will provide a description on a given course. Usage: ?desc <course_number>. Courses go from 1-108.",
+      "randomcourse": "This command will print a random course from the goldmine, in case you want to do one and can't decide",
+      "goldmine": "This command will print the goldmine with the full list of courses. Most of them are extracted from pluralsight, others are provided by anons."
     },
     "actions": {
-      "l": "link",
-      "whatof": "whatof",
-      "randomcourse": "random_course",
-      "w": "whatof",
-      "rc": "random_course",
-      "d": "desc",
       "link": "link",
+      "rc": "random_course",
+      "randomcourse": "random_course",
+      "d": "desc",
+      "whatof": "whatof",
+      "l": "link",
+      "w": "whatof",
       "desc": "desc"
     }
   },
   "#opsec": {
+    "commands": {
+      "vm": "VM (Virtual Machine) is an emulation of a computer system. It provides users with the functionality of a physical computer, despite not being one. They are really useful tests and os' specific programs. https://en.wikipedia.org/wiki/Virtual_machine",
+      "ssh": "SSH (Secure Shell) is a cryptographic network protocol for operating network services securely over an unsecured network. https://en.wikipedia.org/wiki/Secure_Shell",
+      "otr": "OTR (Off-the-Record Messaging) is a cryptographic protocol that provides encryption for instant messaging, enabling users to keep their private conversations private. https://en.wikipedia.org/wiki/Off-the-Record_Messaging",
+      "tor": "TOR (The Onion Router) directs traffic through a free, worldwide, volunteer overlay network. It sends data through a virtual circuit of randomly selected TOR relays, giving anonymity to it's users. https://en.wikipedia.org/wiki/Tor_(anonymity_network)",
+      "vpn": "VPN (Virtual Private Network) establishes a point-to-point connection, enabling it's users to 'modify' their internet location and send data privately. Chart to compare VPNs: https://thatoneprivacysite.net/vpn-comparison-chart/",
+      "opsec": "OpSec (Operational Security) is a term originating in U.S. military jargon, as a process that identifies critical information to determine if friendly actions can be observed by enemy intelligence, determines if information obtained by adversaries could be interpreted to be useful to them, and then executes selected measures that eliminate or reduce adversary exploitation of friendly critical information. https://en.wikipedia.org/wiki/Operations_security",
+      "vps": "VPS (Virtual Private Server) is a virtual machine sold as a service by an Internet hosting service. https://en.wikipedia.org/wiki/Virtual_private_server",
+      "se": "Social engineering is the art of getting a retard to do something you needed done yourself.",
+      "search": "Don't use fucking Google! Use https://www.startpage.com/ or https://duckduckgo.com/ instead."
+    },
+    "actions": {
+      "video": "video",
+      "add": "add_video",
+      "add_video": "add_video",
+      "v": "video"
+    },
+    "help": {
+      "video": "Return a random video from our video database.",
+      "add_video": "Add a youtube video to the video database."
+    },
     "videos": [
       "https://youtu.be/3j3_iPskjxk",
       "https://youtu.be/bUJoA7titIQ",
       "https://youtu.be/9XaYdCdwiWU",
       "https://youtu.be/bM0PmwOlifE",
       "https://youtu.be/7G1LjQSYM5Q"
-    ],
-    "commands": {
-      "vm": "VM (Virtual Machine) is an emulation of a computer system. It provides users with the functionality of a physical computer, despite not being one. They are really useful tests and os' specific programs. https://en.wikipedia.org/wiki/Virtual_machine",
-      "search": "Don't use fucking Google! Use https://www.startpage.com/ or https://duckduckgo.com/ instead.",
-      "vpn": "VPN (Virtual Private Network) establishes a point-to-point connection, enabling it's users to 'modify' their internet location and send data privately.",
-      "se": "Social engineering is the art of getting a retard to do something you needed done yourself.",
-      "otr": "OTR (Off-the-Record Messaging) is a cryptographic protocol that provides encryption for instant messaging, enabling users to keep their private conversations private. https://en.wikipedia.org/wiki/Off-the-Record_Messaging",
-      "tor": "TOR (The Onion Router) directs traffic through a free, worldwide, volunteer overlay network. It sends data through a virtual circuit of randomly selected TOR relays, giving anonymity to it's users. https://en.wikipedia.org/wiki/Tor_(anonymity_network)"
-    },
-    "actions": {
-      "v": "video",
-      "video": "video",
-      "add": "add_video",
-      "add_video": "add_video"
-    },
-    "help": {
-      "video": "Return a random video from our video database.",
-      "add_video": "Add a youtube video to the video database."
-    }
+    ]
   }
 }
