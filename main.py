@@ -3,7 +3,7 @@ import time
 import json
 
 from Bot import Bot
-from CustomChannels import check_nick
+from CustomChannels import check_nick, write_data
 import CustomChannels
 
 art = """
@@ -87,17 +87,17 @@ def listen_irc():
     if cmd == "help" or cmd == "h":
         response = bot_help(chan, arg)
     elif cmd in data["commands"]:
-        response = data["commands"][cmd]
+        response = check_nick(data["commands"][cmd], arg)
     elif chan in data:
         if cmd in data[chan]["commands"]:
-            response = data[chan]["commands"][cmd]
-        elif cmd in data[chan]["actions"]:
+            response = check_nick(data[chan]["commands"][cmd], arg)
+        elif cmd in data[chan]["actions"] and hasattr(CustomChannels, chan[1:].title()):
             void = str(data[chan]["actions"][cmd])
-            obj = getattr(CustomChannels, chan.title())(data, bot)
+            obj = getattr(CustomChannels, chan[1:].title())(data, bot)
             response = exec_command(obj, void, arg)
 
     if response:
-        bot.message(check_nick(response, arg), chan)
+        bot.message(response, chan)
 
 
 def main():
@@ -114,6 +114,7 @@ def main():
 
     while True:
         listen_irc()
+
 
 if __name__ == "__main__":
     test()
