@@ -104,7 +104,7 @@ class Bot(object):
             # Allow the bot to have private conversations
             if chan == self.conf["nick"]:
                 chan = nick
-            elif:
+            elif chan:
                 chan = chan.lower()
 
             # Send welcome message to new users
