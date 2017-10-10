@@ -101,12 +101,11 @@ class Bot(object):
             cmd = data.group("cmd")
             arg = data.group("arg")
 
-            if chan:
-                chan = chan.lower()
-
             # Allow the bot to have private conversations
             if chan == self.conf["nick"]:
                 chan = nick
+            elif:
+                chan = chan.lower()
 
             # Send welcome message to new users
             if mode == "JOIN" and self.sha2(nick) not in self.data["users"]:
