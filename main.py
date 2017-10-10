@@ -96,7 +96,7 @@ def listen_irc():
             obj = getattr(CustomChannels, chan[1:].title())(data, bot)
             response = exec_command(obj, void, arg)
 
-    if response:
+    if response and cmd != "welcome":
         bot.message(response, chan)
 
 
