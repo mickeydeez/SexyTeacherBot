@@ -83,7 +83,7 @@ class Bot(object):
         self._send("MODE %s +B\r\n" % self.conf["nick"])
 
     def listen(self):
-        valid = re.compile(r"^:(?P<nick>\w+)!\S* (?P<mode>\w+) :?(?P<chan>#?\w+)(\s:\?(?P<cmd>\w+))?(\s(?P<arg>[^\s]+))?.*$")
+        valid = re.compile(r"^:(?P<nick>[\w-]+)!\S* (?P<mode>\w+) :?(?P<chan>#?\w+)(\s:\?(?P<cmd>\w+)(\s(?P<arg>\w+))?)?")
 
         try:
             recvd = self.s.recv(4096).decode()
