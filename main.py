@@ -1,6 +1,4 @@
-import threading
-import time
-import json
+import threading, time, json, os
 
 from Bot import Bot
 from CustomChannels import check_nick, write_data
@@ -18,7 +16,8 @@ art = """
                                   Special thanks to ClaudiaD & l33t
 """
 
-CONF_FILENAME = "conf.json"
+PATH = os.path.dirname(os.path.abspath(__file__))
+CONF_FILENAME = PATH + "conf.json"
 
 data = json.load(open(CONF_FILENAME, "r"))
 conf = data["conf"]
