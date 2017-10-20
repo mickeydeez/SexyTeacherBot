@@ -24,8 +24,8 @@ class Bot(object):
         try:
             self.s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 0)
             self.s.setblocking(1)
-            self.s = ssl.wrap_socket(self.s)
             self.s.connect((self.conf["irc"], self.conf["port"]))
+            self.s = ssl.wrap_socket(self.s)
         except Exception as e:
             print("Failed to connect. %s:%d" % (self.conf["irc"], self.conf["port"]))
             print(e)
