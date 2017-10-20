@@ -17,7 +17,7 @@ art = """
 """
 
 PATH = os.path.dirname(os.path.abspath(__file__))
-CONF_FILENAME = PATH + "conf.json"
+CONF_FILENAME = PATH + "/conf.json"
 
 data = json.load(open(CONF_FILENAME, "r"))
 conf = data["conf"]
