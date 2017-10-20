@@ -19,12 +19,11 @@ class Bot(object):
         return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
     def connect(self):
-        # tipc = socket.socket(socket.TIPC_ADDR_NAME, socket.TIPC_ZONE_SCOPE, 0)
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, 0)
 
         try:
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 0)
-            s.settimeout(200)
+            s.setblocking(True)
             s.connect((self.conf["irc"], self.conf["port"]))
             self.s = ssl.wrap_socket(s)
         except Exception as e:
