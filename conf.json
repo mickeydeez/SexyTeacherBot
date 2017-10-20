@@ -692,15 +692,15 @@
     }
   },
   "conf": {
-    "irc": "",
-    "user": "SexyTeacherBot",
+    "irc": "irc.anonops.com",
+    "user": "G3nn1",
     "nick": "SexyTeacherBot",
     "real": "SexyTeacherBot",
     "port": 6697,
     "chans": [
-      ""
+      "#learninghub"
     ],
-    "pass": ""
+    "pass": "6d5c367532e64088231182cde962929f290d2c9152a475a3e794e5b8a5b6dee5"
   },
   "commands": {
     "version": "3.0 - Code is open-sourced on https://github.com/ghostahull/SexyTeacherBot.",

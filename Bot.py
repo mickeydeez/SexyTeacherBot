@@ -19,13 +19,13 @@ class Bot(object):
         return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
     def connect(self):
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, 0)
+        self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
         try:
-            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 0)
-            s.setblocking(True)
-            s.connect((self.conf["irc"], self.conf["port"]))
-            self.s = ssl.wrap_socket(s)
+            self.s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 0)
+            self.s.setblocking(1)
+            self.s = ssl.wrap_socket(self.s)
+            self.s.connect((self.conf["irc"], self.conf["port"]))
         except Exception as e:
             print("Failed to connect. %s:%d" % (self.conf["irc"], self.conf["port"]))
             print(e)
