@@ -130,3 +130,4 @@ class Bot(object):
                 return nick, chan, cmd, arg
         except Exception as e:
             logger.error(e)
+            raise e
