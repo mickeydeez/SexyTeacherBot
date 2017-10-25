@@ -2,9 +2,20 @@ import hashlib
 import socket
 import ssl
 import re
+import logging
+import os
 
 __author__ = "Anonymous"
 __license__ = "GPLv3"
+
+
+PATH = os.path.dirname(os.path.abspath(__file__))
+
+ERROR_LOG_FILE_NAME = PATH + "/errors.log"
+
+logging.basicConfig(filename=ERROR_LOG_FILE_NAME, level=logging.DEBUG, 
+                    format='%(asctime)s %(levelname)s %(name)s %(message)s')
+logger = logging.getLogger(__name__)
 
 
 class Bot(object):
@@ -117,9 +128,6 @@ class Bot(object):
 
             if isinstance(cmd, str):
                 return nick, chan, cmd, arg
-        except socket.timeout:
-            print("[-] Error: Socket timeout.")
-            self.listen()
         except Exception as e:
-            self.s.close()
-            raise e
+            logger.error(e)
+            self.s.connect()
