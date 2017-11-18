@@ -2,20 +2,10 @@ import hashlib
 import socket
 import ssl
 import re
-import logging
 import os
 
 __author__ = "Anonymous"
 __license__ = "GPLv3"
-
-
-PATH = os.path.dirname(os.path.abspath(__file__))
-
-ERROR_LOG_FILE_NAME = PATH + "/errors.log"
-
-logging.basicConfig(filename=ERROR_LOG_FILE_NAME, level=logging.DEBUG, 
-                    format='%(asctime)s %(levelname)s %(name)s %(message)s')
-logger = logging.getLogger(__name__)
 
 
 class Bot(object):
@@ -121,13 +111,15 @@ class Bot(object):
             if mode == "JOIN" and self.sha2(nick) not in self.data["users"]:
                 cmd = "welcome"
 
-            if arg:
-                print("<%s:%s> %s %s" % (nick, chan, cmd, arg))
-            else:
-                print("<%s:%s> %s" % (nick, chan, cmd))
-
             if isinstance(cmd, str):
+                msg = "<%s:%s> %s" % (nick, chan, cmd)
+                if arg:
+                    msg += " " + arg
+
+                print(msg)
                 return nick, chan, cmd, arg
         except Exception as e:
-            logger.error(e)
-            raise e
+            print("Error: %s" % e)
+            self.s.close()
+            self.connect()
+            return self.listen()

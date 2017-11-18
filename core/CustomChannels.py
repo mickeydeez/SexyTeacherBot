@@ -1,4 +1,6 @@
-import random, json, re
+import json
+import random
+import re
 
 CONF_FILENAME = "conf.json"
 VIDEO_FORMAT = re.compile("^http(?:s?)://(?:www\.)?youtu(?:be\.com/watch\?v=|\.be/)([\w\-_]*)(&(amp;)?‌​[\w\?‌​=]*)?$")
@@ -28,6 +30,11 @@ class Learninghub(object):
             "ghostbin. Type ?help for more." % nick
         )
         self.bot.notice(nick, greet)
+
+    def users(self, nick=None):
+        num = len(self.data[self.name]["users"])
+        msg = "There are %d registered users." % num
+        return check_nick(msg, nick)
 
     def random_course(self, nick=None):
         i = random.choice(self.data[self.name]["courses"])

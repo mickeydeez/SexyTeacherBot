@@ -74,7 +74,7 @@ def exec_command(obj, void, arg):
     return response
 
 
-def listen_irc():
+def listen():
     info = bot.listen()
 
     if not info:
@@ -112,7 +112,7 @@ def main():
     print(conf["chans"][0] + "\n")
 
     while True:
-        listen_irc()
+        listen()
 
 
 if __name__ == "__main__":
