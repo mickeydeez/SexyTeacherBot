@@ -32,7 +32,7 @@ class Learninghub(object):
         self.bot.notice(nick, greet)
 
     def users(self, nick=None):
-        num = len(self.data[self.name]["users"])
+        num = len(self.data["users"])
         msg = "There are %d registered users." % num
         return check_nick(msg, nick)
 
