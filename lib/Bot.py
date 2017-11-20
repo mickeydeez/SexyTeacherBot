@@ -113,12 +113,12 @@ class Bot(object):
         print("[+] Credentials sent. Waiting for authentication.")
 
     def run(self):
-        try:
-            while self.running:
+        while self.running:
+            try:
                 self.listen()
-        except Exception:
-            sleep(5)
-            self._bootstrap()
+            except Exception:
+                sleep(5)
+                self._bootstrap()
 
     def ping(self):
         while True:
