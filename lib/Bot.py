@@ -37,44 +37,37 @@ class Bot(object):
                 r"^:(?P<nick>[\w-]+)!\S* (?P<mode>\w+) \
 :?(?P<chan>#?\w+)(\s:\?(?P<cmd>\w+)(\s(?P<arg>\w+))?)?")
 
-        try:
-            recvd = self.s.recv(4096).decode()
-            data = valid.match(recvd)
+        recvd = self.s.recv(4096).decode()
+        data = valid.match(recvd)
 
-            if "PING" == recvd[:4]:
-                self.pong(recvd)
-                return
-            elif not data:
-                return
+        if "PING" == recvd[:4]:
+            self.pong(recvd)
+            return
+        elif not data:
+            return
 
-            nick = data.group("nick")
-            mode = data.group("mode")
-            chan = data.group("chan")
-            cmd = data.group("cmd")
-            arg = data.group("arg")
+        nick = data.group("nick")
+        mode = data.group("mode")
+        chan = data.group("chan")
+        cmd = data.group("cmd")
+        arg = data.group("arg")
 
-            # Allow the bot to have private conversations
-            if chan == self.conf["nick"]:
-                chan = nick
-            elif chan:
-                chan = chan.lower()
+        # Allow the bot to have private conversations
+        if chan == self.conf["nick"]:
+            chan = nick
+        elif chan:
+            chan = chan.lower()
 
-            # Send welcome message to new users
-            if mode == "JOIN" and self.sha2(nick) not in self.data["users"]:
-                cmd = "welcome"
+        # Send welcome message to new users
+        if mode == "JOIN" and self.sha2(nick) not in self.data["users"]:
+            cmd = "welcome"
 
-            if isinstance(cmd, str):
-                msg = "<%s:%s> %s" % (nick, chan, cmd)
-                if arg:
-                    msg += " " + arg
-
-                print(msg)
-                return nick, chan, cmd, arg
-        except Exception as e:
-            print("Error: %s" % e)
-            self.s.close()
-            self.connect()
-            return self.listen()
+        if isinstance(cmd, str):
+            msg = "<%s:%s> %s" % (nick, chan, cmd)
+            if arg:
+                msg += " " + arg
+            print(msg)
+            return nick, chan, cmd, arg
 
     def _connect(self):
         self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -116,7 +109,9 @@ class Bot(object):
         while self.running:
             try:
                 self.listen()
-            except Exception:
+            except Exception as e:
+                print("Exception: %s" % str(e))
+                print("Sleeping 5 seconds before reconnecting")
                 sleep(5)
                 self._bootstrap()
 
